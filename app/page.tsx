@@ -2,7 +2,7 @@ import Featured from "./featured";
 import Gallery from "./gallery";
 export default function Home() {
   return (
- <div id="container" className="max-w-6xl bg-red-100x mx-auto px-8">
+ <div id="container" className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 overflow-hidden">
 
         <div id="header" className="py-7 flex justify-between flex-col lg:flex-row items-center gap-4">
 
@@ -10,7 +10,7 @@ export default function Home() {
                 JN Architecture
             </h1>
 
-            <div id="menu" className="jetbrains-mono-500 uppercase text-[11px] tracking-[1.1px] flex gap-8 items-center">
+            <div id="menu" className="jetbrains-mono-500 uppercase text-[11px] tracking-[1.1px] flex flex-wrap justify-center gap-x-4 gap-y-2 sm:gap-8 items-center">
 
                 <a href="#featured">Featured</a>
                 <a href="#about">Point of view</a>
@@ -25,9 +25,9 @@ export default function Home() {
 
        
 
-            <div className="flex justify-between mb-6 items-center">
+            <div className="flex flex-col gap-4 sm:flex-row justify-between mb-6 sm:items-center">
 
-                <div>
+                <div className="min-w-0">
                     <h6 className="text-[10px] tracking-[1.8px] jetbrains-mono-500 text-[#00789F] mb-2">
                         BUILT NOTES · ISSUE 01
                     </h6>
@@ -36,7 +36,7 @@ export default function Home() {
                     </h1>
                 </div>
 
-                <div className="border flex border-black/20 items-center">
+                <div className="border flex border-black/20 items-center self-end sm:self-auto">
                     <button className="p-3" id="featured_prev">
                         <img src="Icon.svg" className="aspect-square" />
                     </button>
@@ -52,7 +52,7 @@ export default function Home() {
 
         </div>
 
-        <div id="about" className="py-16 flex gap-16 items-center flex-col lg:flex-row">
+        <div id="about" className="py-12 sm:py-16 flex gap-8 sm:gap-12 lg:gap-16 items-center flex-col lg:flex-row">
 
             <div id="about_left" className="flex-1">
 
@@ -60,7 +60,7 @@ export default function Home() {
                     A NOTE ON MAKING · 01
                 </h6>
                   
-                <h1 className="text-[48px] leading-none cormorant-garamond-300">
+                <h1 className="text-[38px] sm:text-[48px] leading-[0.95] cormorant-garamond-300">
                     Leave room for<br/>
                     the day to change.
                 </h1>

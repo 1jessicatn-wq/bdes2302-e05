@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
 .jetbrains-mono-400 {
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
@@ -31,19 +40,33 @@
   display: -webkit-box; /* Not needed if autoprefixing */
   display: -ms-flexbox; /* Not needed if autoprefixing */
   display: flex;
-  margin-left: -32px; /* gutter size offset */
+  margin-left: -16px; /* gutter size offset */
   width: auto;
 }
 .my-masonry-grid_column {
-  padding-left: 32px; /* gutter size */
+  padding-left: 16px; /* gutter size */
   background-clip: padding-box;
 }
 
 /* Style your items */
 .my-masonry-grid_column > .grid-item {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .my-masonry-grid_column > .grid-item img {
   display: block;
+}
+
+@media (min-width: 640px) {
+  .my-masonry-grid {
+    margin-left: -32px;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 32px;
+  }
+
+  .my-masonry-grid_column > .grid-item {
+    margin-bottom: 32px;
+  }
 }
