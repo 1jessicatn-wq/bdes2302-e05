@@ -40,7 +40,10 @@
 }
 
 /* Style your items */
-.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-  background: grey;
+.my-masonry-grid_column > .grid-item {
   margin-bottom: 32px;
+}
+
+.my-masonry-grid_column > .grid-item img {
+  display: block;
 }

@@ -47,50 +47,11 @@ export default function Home() {
                 </div>
 
             </div>
-                   <Featured />
 
-            <div id="slider">
-                <Featured />
-                <div className="relative">
-
-                    <img className="saturate-0 hover:saturate-100 transition-all aspect-[16/9] w-full" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=1800&amp;q=85" alt="Quiet modern home opening onto a garden" />
-                    <div
-                        className="absolute bottom-0 left-0 w-full text-white bg-black/20 backdrop-blur-[4px] p-8 border-t-1 border-white/20 hidden md:block">
-                        <div className="flex items-center justify-between">
-                            <h1 className="cormorant-garamond-300 text-[30px] leading-[36px]">A house that lets the garden in</h1>
-                            <h6 className="jetbrains-mono-400 text-[10px] leading-[15px]">PORTLAND, 2025</h6>
-                        </div>
-                        <p className="jetbrains-mono-400 text-[11px] leading-[16.5px]">
-                            Timber, plaster, and a long afternoon
-                        </p>
-                    </div>
-
-                </div>
-
-                <div className="relative">
-
-                    <img className="saturate-0 hover:saturate-100 transition-all aspect-[16/9] w-full" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=1800&amp;q=85" alt="Warm, sunlit interior with a view toward an adjoining room" />
-                    <div
-                        className="absolute bottom-0 left-0 w-full text-white bg-black/20 backdrop-blur-[4px] p-8 border-t-1 border-white/20 hidden md:block">
-                        <div className="flex items-center justify-between">
-                            <h1 className="cormorant-garamond-300 text-[30px] leading-[36px]">The borrowed horizon</h1>
-                            <h6 className="jetbrains-mono-400 text-[10px] leading-[15px]">KYOTO, 2024</h6>
-                        </div>
-                        <p className="jetbrains-mono-400 text-[11px] leading-[16.5px]">
-                            A quiet threshold between inside and out
-                        </p>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
+            <Featured />
 
         </div>
 
-        <Gallery />
         <div id="about" className="py-16 flex gap-16 items-center flex-col lg:flex-row">
 
             <div id="about_left" className="flex-1">
@@ -127,51 +88,9 @@ export default function Home() {
 
 
         </div>
-        <div id="gallery">
 
-            <h6 className="text-[10px] tracking-[1.8px] jetbrains-mono-500 text-[#00789F] mb-2">
-                FROM THE NOTEBOOK
-            </h6>
-            <h1 className="text-[30px] leading-none cormorant-garamond-300">
-                Details, places, passing light
-            </h1>
+        <Gallery />
 
-            <div className="grid border-t-1 border-black/20 pt-8 mt-4">
-                
-                <div className="grid-sizer"></div>
-                <div className="gutter-sizer"></div>
-
-                <div className="grid-item">
-                    <img className="saturate-0 hover:saturate-100 transition-all" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Restrained contemporary home framed by its landscape" />
-                </div>
-                <div className="grid-item">
-                    <img className="saturate-0 hover:saturate-100 transition-all" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Close view of a quiet, light-filled interior" />
-                </div>
-
-                <div className="grid-item">
-                    <img className="saturate-0 hover:saturate-100 transition-all" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Sunlight settling into a softly textured interior" />
-                </div>
-
-                <div className="grid-item">
-                    <img className="saturate-0 hover:saturate-100 transition-all" src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Sculptural exterior lines against an open sky" />
-                </div>
-
-
-                <div className="grid-item">
-                    <img className="saturate-0 hover:saturate-100 transition-all" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Minimal white home seen through a leafy foreground" />
-                </div>
-
-
-                <div className="grid-item">
-                    <img className="saturate-0 hover:saturate-100 transition-all" src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Natural textures and considered furniture in a modest interior" />
-                </div>
-
-
-
-            </div>
-
-
-        </div>
         <div id="footer"
             className="py-10 flex justify-between jetbrains-mono-400 text-[#666666] text-[10px] tracking-[1px] flex-col lg:flex-row items-center gap-4 text-center">
 

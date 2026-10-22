@@ -11,11 +11,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+
+
 export default function Featured() {
   return (
     <Swiper
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
+      loop={true}
       spaceBetween={0}
       slidesPerView={1}
       navigation= {{ 
